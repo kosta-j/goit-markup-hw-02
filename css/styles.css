@@ -1,0 +1,13 @@
+/* main text color #212121 */
+/* secondary text color #757575 */
+/* white text #FFFFFF */
+/* footer contacts text rgba(255, 255, 255, 0.6) */
+
+/* accent #2196F3 */
+/* main background #FFFFFF */
+/* secondary 1 background #2F303A */
+/* secondary 2 background #F5F4FA */
+body {
+  color: #757575;
+  background-color: #ffffff;
+}
