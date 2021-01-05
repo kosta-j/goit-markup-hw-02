@@ -1,5 +1,19 @@
-/* main text color #212121 */
-/* secondary text color #757575 */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+
+/* title text color #212121 */
+/* primary text color #757575 */
 /* white text #FFFFFF */
 /* footer contacts text rgba(255, 255, 255, 0.6) */
 
@@ -7,7 +21,44 @@
 /* main background #FFFFFF */
 /* secondary 1 background #2F303A */
 /* secondary 2 background #F5F4FA */
-body {
-  color: #757575;
-  background-color: #ffffff;
+
+/* logo */
+.logo {
+  color: var(--title-text-color);
+}
+.logo span {
+  color: var(--accent-color);
+}
+
+/* site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* contacts */
+.header-mailto {
+  color: var(--accent-color);
+}
+.header-tel {
+  color: var(--primary-text-color);
+}
+
+/* section */
+.section .section-title {
+  color: var(--title-text-color);
+}
+
+/* hero */
+.hero {
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+/* advantages */
+.advantages .title {
+  color: var(--title-text-color);
 }
