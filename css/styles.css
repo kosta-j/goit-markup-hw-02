@@ -2,11 +2,14 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --main-bg-color: #ffffff;
+  --secondary-light-bg-color: #f5f4fa;
+  --secondary-dark-bg-color: #2f303a;
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
 }
 ul {
   list-style: none;
@@ -31,7 +34,7 @@ ul {
   color: var(--accent-color);
 }
 .footer-logo {
-  color: #ffffff;
+  color: var(--main-bg-color);
 }
 .footer-logo span {
   color: var(--accent-color);
@@ -62,8 +65,8 @@ ul {
 /* hero */
 .hero,
 footer {
-  color: #ffffff;
-  background-color: #2f303a;
+  color: var(--main-bg-color);
+  background-color: var(--secondary-dark-bg-color);
 }
 
 /* advantages */
@@ -80,4 +83,14 @@ footer {
 .footer-contacts .mailto,
 .footer-contacts .tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* button */
+.button {
+  background-color: var(--secondary-light-bg-color);
+  color: var(--title-text-color);
+}
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
 }
