@@ -50,11 +50,14 @@ ul {
 }
 
 /* contacts */
-.header-contacts .mailto {
-  color: var(--accent-color);
-}
-.header-contacts .tel {
+.header-contacts {
   color: var(--primary-text-color);
+}
+.footer-contacts:hover,
+.footer-contacts:focus,
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-color);
 }
 
 /* section */
@@ -63,8 +66,7 @@ ul {
 }
 
 /* hero */
-.hero,
-footer {
+.hero {
   color: var(--main-bg-color);
   background-color: var(--secondary-dark-bg-color);
 }
@@ -80,8 +82,11 @@ footer {
 }
 
 /* footer */
-.footer-contacts .mailto,
-.footer-contacts .tel {
+.page-footer {
+  color: var(--main-bg-color);
+  background-color: var(--secondary-dark-bg-color);
+}
+.footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
 
