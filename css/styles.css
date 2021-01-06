@@ -8,7 +8,7 @@ body {
   color: var(--primary-text-color);
   background-color: #ffffff;
 }
-.list {
+ul {
   list-style: none;
 }
 
@@ -23,10 +23,17 @@ body {
 /* secondary 2 background #F5F4FA */
 
 /* logo */
-.logo {
+.header-logo {
   color: var(--title-text-color);
 }
-.logo span {
+.header-logo span,
+.footer-logo span {
+  color: var(--accent-color);
+}
+.footer-logo {
+  color: #ffffff;
+}
+.footer-logo span {
   color: var(--accent-color);
 }
 
@@ -40,10 +47,10 @@ body {
 }
 
 /* contacts */
-.header-mailto {
+.header-contacts .mailto {
   color: var(--accent-color);
 }
-.header-tel {
+.header-contacts .tel {
   color: var(--primary-text-color);
 }
 
@@ -53,7 +60,8 @@ body {
 }
 
 /* hero */
-.hero {
+.hero,
+footer {
   color: #ffffff;
   background-color: #2f303a;
 }
@@ -61,4 +69,15 @@ body {
 /* advantages */
 .advantages .title {
   color: var(--title-text-color);
+}
+
+/* team */
+.team .title {
+  color: var(--title-text-color);
+}
+
+/* footer */
+.footer-contacts .mailto,
+.footer-contacts .tel {
+  color: rgba(255, 255, 255, 0.6);
 }
