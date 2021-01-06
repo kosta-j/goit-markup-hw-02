@@ -99,3 +99,8 @@ ul {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
 }
+
+/* portfolio */
+.project-list .title {
+  color: var(--title-text-color);
+}
