@@ -5,6 +5,9 @@
   --main-bg-color: #ffffff;
   --secondary-light-bg-color: #f5f4fa;
   --secondary-dark-bg-color: #2f303a;
+
+  --main-font-family: Roboto, sans-serif;
+  --logo-font-family: Raleway, sans-serif;
 }
 
 body {
@@ -12,7 +15,7 @@ body {
   background-color: var(--main-bg-color);
 
   font-weight: 400;
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font-family);
   letter-spacing: 0.03em;
 }
 ul {
@@ -20,9 +23,6 @@ ul {
 }
 a {
   text-decoration: none;
-}
-button {
-  font-family: inherit;
 }
 address {
   font-style: normal;
@@ -44,7 +44,7 @@ address {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 26px;
-  font-family: Raleway, sans-serif;
+  font-family: var(--logo-font-family);
   line-height: 1.19;
 }
 .header-logo span,
@@ -145,7 +145,7 @@ address {
 }
 .footer-logo {
   color: var(--main-bg-color);
-  font-family: Raleway, sans-serif;
+  font-family: var(--logo-font-family);
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -159,6 +159,7 @@ address {
 .button {
   color: var(--title-text-color);
   background-color: var(--secondary-light-bg-color);
+  var(--main-font-family)
 }
 .button.primary {
   color: var(--main-bg-color);
