@@ -138,6 +138,9 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+.hero .button:hover {
+  cursor: pointer;
+}
 /* HERO SECTION end */
 
 /* ADVANTAGES */
