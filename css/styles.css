@@ -6,18 +6,10 @@
   --secondary-light-bg-color: #f5f4fa;
   --secondary-dark-bg-color: #2f303a;
 
-  --main-font-family: Roboto, sans-serif;
-  --logo-font-family: Raleway, sans-serif;
+  --main-font-family: 'Roboto', sans-serif;
+  --logo-font-family: 'Raleway', sans-serif;
 }
 
-body {
-  color: var(--primary-text-color);
-  background-color: var(--main-bg-color);
-
-  font-weight: 400;
-  font-family: var(--main-font-family);
-  letter-spacing: 0.03em;
-}
 ul {
   list-style: none;
 }
@@ -28,31 +20,74 @@ address {
   font-style: normal;
 }
 
-/* title text color #212121 */
-/* primary text color #757575 */
-/* white text #FFFFFF */
-/* footer contacts text rgba(255, 255, 255, 0.6) */
+/* COMMON STYLES */
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-bg-color);
 
-/* accent #2196F3 */
-/* main background #FFFFFF */
-/* secondary 1 background #2F303A */
-/* secondary 2 background #F5F4FA */
+  font-weight: 400;
+  font-family: var(--main-font-family);
+  letter-spacing: 0.03em;
+}
 
-/* logo */
-.header-logo,
-.footer-logo {
-  color: var(--title-text-color);
+/* HIDE HEADER */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* LOGO  */
+.logo {
   font-weight: 700;
   font-size: 26px;
   font-family: var(--logo-font-family);
   line-height: 1.19;
 }
-.header-logo span,
-.footer-logo span {
+.header-logo .logo-span,
+.footer-logo .logo-span {
   color: var(--accent-color);
 }
 
-/* site nav */
+/* BUTTONS */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-light-bg-color);
+
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.button:hover,
+.button:focus,
+.button.active {
+  color: var(--main-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* SECTION */
+.section .section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* COMMON STYLES end */
+
+/* HEADER */
+.header-logo {
+  color: var(--title-text-color);
+}
+
+/* SITE NAV */
 .site-nav .link {
   color: var(--title-text-color);
 
@@ -65,8 +100,11 @@ address {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.site-nav .active {
+  color: var(--accent-color);
+}
 
-/* contacts */
+/* CONTACTS */
 .header-contacts {
   color: var(--primary-text-color);
 
@@ -75,39 +113,13 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.footer-contacts:hover,
-.footer-contacts:focus,
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
 }
+/* HEADER end */
 
-/* section */
-.section .section-title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-/* button */
-.button {
-  color: var(--title-text-color);
-  background-color: var(--secondary-light-bg-color);
-
-  font-weight: 500;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.62;
-}
-.button.primary {
-  color: var(--main-bg-color);
-  background-color: var(--accent-color);
-}
-
-/* hero */
+/* HERO SECTION */
 .hero {
   color: var(--main-bg-color);
   background-color: var(--secondary-dark-bg-color);
@@ -123,11 +135,12 @@ address {
 .hero .button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
 }
+/* HERO SECTION end */
 
-/* advantages */
+/* ADVANTAGES */
 .advantages .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -139,8 +152,9 @@ address {
   font-size: 14px;
   line-height: 1.71;
 }
+/* ADVANTAGES end */
 
-/* team */
+/* TEAM */
 .team {
   background-color: var(--secondary-light-bg-color);
 }
@@ -154,8 +168,9 @@ address {
   font-size: 16px;
   line-height: 1.19;
 }
+/* TEAM end */
 
-/* footer */
+/* FOOTER */
 .page-footer {
   color: var(--main-bg-color);
   background-color: var(--secondary-dark-bg-color);
@@ -166,7 +181,6 @@ address {
 }
 .footer-logo {
   color: var(--main-bg-color);
-  font-family: var(--logo-font-family);
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -174,8 +188,12 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
+}
 
-/* portfolio */
+/* PORTFOLIO */
 .project-list .title {
   color: var(--title-text-color);
   font-weight: 700;

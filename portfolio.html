@@ -12,35 +12,39 @@
     <title>Web Studio</title>
 </head>
 <body>
-    <header>
+    <header class="page-header">
         <nav>
-            <!-- logo --> 
-            <a class="header-logo" href="./index.html"><span>Web</span>Studio</a>
-            <!-- logo end -->
+            <!-- LOGO -->
+            <a class="logo header-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+            <!-- LOGO END -->
             <ul class="site-nav">
                 <li>
                     <a class="link" href="./index.html">Студия</a>
                 </li>
                 <li>
-                    <a class="link" href="./portfolio.html">Портфолио</a>
+                    <a class="link active" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li>
                     <a class="link" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
-        <address>
-            <a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <ul class="contacts">
+            <li>
+                <a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+                <a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+        </ul>
     </header>
-    <main>
-        <section>
-            <h1 hidden>Портфолио</h1>
-            <!-- Filter-Buttons -->
+    <main class="page-main">
+        <section class="portfolio">
+            <h1 class="visually-hidden">Портфолио</h1>
+            <!-- FILTER-BUTTONS -->
             <ul>
                 <li>
-                    <button class="button primary" type="button">Все</button>
+                    <button class="button" type="button">Все</button>
                 </li>
                 <li>
                     <button class="button" type="button">Веб-сайты</button>
@@ -55,8 +59,9 @@
                     <button class="button" type="button">Маркетинг</button>
                 </li>
             </ul>
-            <!-- Filter-Buttons end-->
-            <!-- Projects -->
+            <!-- FILTER-BUTTONS end-->
+
+            <!-- PROJECTS -->
             <ul class="project-list">
                 <li>
                     <a href="">
@@ -122,14 +127,14 @@
                     </a>
                     </li>
             </ul>
-            <!-- Projects end -->
+            <!-- PROJECTS end -->
         </section>
     </main>
     <footer class="page-footer">
-        <!-- logo -->
-        <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
-        <!-- logo end -->
-        <address>
+        <!-- lOGO -->
+        <a class="logo footer-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+        <!-- lOGO end -->
+        <address class="page-adress">
             <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
             <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
